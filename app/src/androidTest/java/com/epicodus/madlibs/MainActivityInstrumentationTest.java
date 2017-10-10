@@ -38,7 +38,5 @@ public class MainActivityInstrumentationTest {
         onView(withId(R.id.second_edit_text)).perform(typeText("working"));
         onView(withId(R.id.third_edit_text)).perform(typeText("ballin"));
         onView(withId(R.id.get_story_button)).perform(click());
-
     }
-
 }
