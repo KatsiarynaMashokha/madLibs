@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MadLibs</string>
+    <string name="enter_your_name">Occupation (a job): </string>
+    <string name="noun">Noun</string>
+    <string name="adjective">Adjective</string>
+    <string name="verb">Verb</string>
+    <string name="get_your_story">Get your story!</string>
+</resources>
