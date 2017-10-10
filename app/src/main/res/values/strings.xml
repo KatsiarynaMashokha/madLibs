@@ -6,6 +6,10 @@
     <string name="verb">Verb</string>
     <string name="get_your_story">Get your story!</string>
     <string name="select_a_character_below">Select a character below</string>
+    <string name="pretty">pretty</string>
+    <string name="sad">sad</string>
+    <string name="bad">bad</string>
+    <string name="select_a_mood">Select a mood</string>
 
 
     <string-array name="name_array">

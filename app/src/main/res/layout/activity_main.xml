@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
-    tools:context="com.epicodus.madlibs.MainActivity">
+    android:orientation="vertical"
+    tools:context="com.epicodus.madlibs.MainActivity"
+    android:weightSum="1">
 
     <EditText
         android:id="@+id/first_edit_text"
@@ -16,55 +17,78 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/select_a_character_below"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        android:text="@string/select_a_character_below" />
 
     <Spinner
         android:id="@+id/second_edit_text"
         style="@style/editTextStyle"
-        android:hint="@string/noun"
         android:entries="@array/name_array"
+        android:hint="@string/noun"
         android:spinnerMode="dialog" />
 
-    <EditText
-        android:id="@+id/third_edit_text"
-        style="@style/editTextStyle"
-        android:hint="@string/adjective" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_a_mood"
+        android:layout_margin="25dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_pretty"
+            style="@style/editTextStyle"
+            android:text="@string/pretty" />
+
+        <RadioButton
+            android:id="@+id/radio_sad"
+            style="@style/editTextStyle"
+            android:text="@string/sad" />
+
+        <RadioButton
+            android:id="@+id/radio_bad"
+            style="@style/editTextStyle"
+            android:text="@string/bad" />
+
+    </RadioGroup>
 
     <!--<EditText-->
-        <!--android:id="@+id/fourth_edit_text"-->
-        <!--style="@style/editTextStyle"-->
-        <!--android:hint="@string/noun" />-->
+    <!--android:id="@+id/fourth_edit_text"-->
+    <!--style="@style/editTextStyle"-->
+    <!--android:hint="@string/noun" />-->
 
     <!--<EditText-->
-        <!--android:id="@+id/fifth_edit_text"-->
-        <!--style="@style/editTextStyle"-->
-        <!--android:hint="@string/verb" />-->
+    <!--android:id="@+id/fifth_edit_text"-->
+    <!--style="@style/editTextStyle"-->
+    <!--android:hint="@string/verb" />-->
 
     <!--<EditText-->
-        <!--android:id="@+id/sixth_edit_text"-->
-        <!--style="@style/editTextStyle"-->
-        <!--android:hint="@string/adjective" />-->
+    <!--android:id="@+id/sixth_edit_text"-->
+    <!--style="@style/editTextStyle"-->
+    <!--android:hint="@string/adjective" />-->
 
     <!--<EditText-->
-        <!--android:id="@+id/seventh_edit_text"-->
-        <!--style="@style/editTextStyle"-->
-        <!--android:hint="@string/noun" />-->
+    <!--android:id="@+id/seventh_edit_text"-->
+    <!--style="@style/editTextStyle"-->
+    <!--android:hint="@string/noun" />-->
 
     <!--<EditText-->
-        <!--android:id="@+id/eighth_edit_text"-->
-        <!--style="@style/editTextStyle"-->
-        <!--android:hint="@string/verb" />-->
+    <!--android:id="@+id/eighth_edit_text"-->
+    <!--style="@style/editTextStyle"-->
+    <!--android:hint="@string/verb" />-->
 
     <!--<EditText-->
-        <!--android:id="@+id/ninth_edit_text"-->
-        <!--style="@style/editTextStyle"-->
-        <!--android:hint="@string/noun" />-->
+    <!--android:id="@+id/ninth_edit_text"-->
+    <!--style="@style/editTextStyle"-->
+    <!--android:hint="@string/noun" />-->
 
     <!--<EditText-->
-        <!--android:id="@+id/tenth_edit_text"-->
-        <!--style="@style/editTextStyle"-->
-        <!--android:hint="@string/verb" />-->
+    <!--android:id="@+id/tenth_edit_text"-->
+    <!--style="@style/editTextStyle"-->
+    <!--android:hint="@string/verb" />-->
 
     <Button
         android:id="@+id/get_story_button"
