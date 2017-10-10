@@ -5,4 +5,12 @@
     <string name="adjective">Adjective</string>
     <string name="verb">Verb</string>
     <string name="get_your_story">Get your story!</string>
+    <string name="select_a_character_below">Select a character below</string>
+
+
+    <string-array name="name_array">
+        <item>Obama</item>
+        <item>Putin</item>
+        <item>Merkel</item>
+    </string-array>
 </resources>

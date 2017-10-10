@@ -13,10 +13,18 @@
         style="@style/editTextStyle"
         android:hint="@string/enter_your_name" />
 
-    <EditText
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_a_character_below"
+        android:layout_margin="20dp"/>
+
+    <Spinner
         android:id="@+id/second_edit_text"
         style="@style/editTextStyle"
-        android:hint="@string/noun" />
+        android:hint="@string/noun"
+        android:entries="@array/name_array"
+        android:spinnerMode="dialog" />
 
     <EditText
         android:id="@+id/third_edit_text"

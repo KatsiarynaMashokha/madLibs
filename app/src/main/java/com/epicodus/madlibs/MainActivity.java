@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
     @Bind(R.id.first_edit_text) EditText firstEditText;
-    @Bind(R.id.second_edit_text) EditText secondEditText;
+    @Bind(R.id.second_edit_text) Spinner secondEditText;
     @Bind(R.id.third_edit_text) EditText thirdEditText;
 //    @Bind(R.id.fourth_edit_text) EditText fourthEditText;
 //    @Bind(R.id.fifth_edit_text) EditText fifthEditText;
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private Bundle getInputs() {
         occupation = firstEditText.getText().toString();
-        noun = secondEditText.getText().toString();
+        noun = secondEditText.getSelectedItem().toString();
         adj = thirdEditText.getText().toString();
         return makeBundle( new String[]{occupation, noun, adj} );
     }
